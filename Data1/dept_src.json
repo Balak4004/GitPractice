@@ -1,0 +1,14 @@
+[
+  {
+    "deptid":1,
+    "deptname":"Sales"
+  },
+  {
+    "deptid": 2,
+    "deptname":"HR"
+  },
+  {
+    "deptid":3,
+    "deptname":"Marketing"
+  }
+  ]
