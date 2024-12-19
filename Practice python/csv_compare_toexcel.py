@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Load the source and target CSV files into DataFrames
-empsrc = pd.read_csv('Data1/empsrc.csv')
-emptgt = pd.read_csv('Data1/emptgt.csv')
+empsrc = pd.read_csv('../Data1/empsrc.csv')
+emptgt = pd.read_csv('../Data1/emptgt.csv')
 
 # Find rows in empsrc that are not in emptgt
 not_in_tgt = empsrc.merge(emptgt, indicator=True, how='outer').query('_merge == "left_only"').drop('_merge', axis=1)
